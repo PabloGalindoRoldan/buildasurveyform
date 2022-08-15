@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Service Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Service Experience Survey Form
+        </h1>
+        <p id="description" class="description"> Thank you for taking the time to help us improve our service.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="division">
+          <label class="tags" id="name-label">Name</label>
+            <input
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required 
+          class="boxes"
+            />
+        </div>
+        <div class="division">
+          <label class="tags" id="email-label">Email</label>
+            <input
+          id="email" 
+          type="email" 
+          placeholder="Enter your Email address"
+          required 
+          class="boxes"
+            /> 
+        </div>
+        <div class="division">
+          <label class="tags" id="number-label">Age</label>
+            <input 
+          id="number"
+          type="number"
+          min="13"
+          max="120"
+          placeholder="Enter your age"
+          class="boxes"
+            />
+        </div>
+        <div class="division">
+          <label class="tags">What type of professional consultation you had?</label>
+          <select id="dropdown">
+            <option>Select one</option>
+            <option>Commercial Law</option>
+            <option>Labour Law</option>
+            <option>Criminal Law</option>
+            <option>Private Law</option>
+            <option>Family Law</option>
+          </select>
+        </div>
+        <div class="division">
+          <label>Would you recommend the service to a friend?
+          </label>
+          <div class="division">
+          <input type="radio" name="recommend" value="yes">Yes</input>
+          <input type="radio" name="recommend" value="no">No</input>
+          <input type="radio" name="recommend" value="maybe">Maybe</input>
+          </div>
+        <div>
+          <p>What would you like to see improved?</p>
+          <div class="division">
+          <label>
+          <input type="checkbox" value="time"/> Time availability </label> 
+          <label>
+          <input type="checkbox" value="morelawyers"/> More Lawyers </label>
+          <label>
+          <input type="checkbox" value="moreclasses"/> More classes of law </label>
+          <label>
+          <input type="checkbox" value="morechannels"/> More communications channels </label>
+        </div>
+        <div class="division">
+          <p>Leave your comments</p>
+            <textarea placeholder="I enjoyed working with you!"></textarea>
+
+        </div>
+        <div class="division">
+          <input value="Submit" class="submit" id="submit" type="submit" />
+        </div>
+    </form>
+  </div>
+  </body>
+  </html>
